@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <title>Simple Quiz</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="quiz-box shadow bg-white rounded p-4">
+            <h1 class="text-center">Simple Quiz</h1>
+            <div id="quiz-content" class="card-body">
+                <h2 id="question" class="card-title text-center">Question goes here</h2>
+                <div id="answer-buttons" class="d-grid gap-2">
+                    <button class="btn btn-primary mb-2 answer-btn">Answer 1</button>
+                    <button class="btn btn-primary mb-2 answer-btn">Answer 2</button>
+                    <button class="btn btn-primary mb-2 answer-btn">Answer 3</button>
+                    <button class="btn btn-primary mb-2 answer-btn">Answer 4</button>
+                </div>
+                <button id="next-btn" class="btn btn-info mt-3 d-block mx-auto">Next</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="result-section" class="results mt-4 shadow bg-white rounded p-4 d-none">
+        <h2 class="text-center">Your Results</h2>
+        <p id="final-score" class="text-center"></p>
+        <p id="correct-score" class="text-success text-center"></p>
+        <p id="incorrect-score" class="text-danger text-center"></p>
+    </div>
+    </div>
+    <!-- Bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

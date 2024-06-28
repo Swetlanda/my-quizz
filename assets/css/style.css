@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Ensures the entire page uses Poppins if available */
+}
+
+body {
+    background-color: paleturquoise; /* Light turquoise background for the whole page */
+}
+
+/* Centered Quiz Box */
+.quiz-box {
+    background-color: #fff; /* White background for contrast */
+    max-width: 600px; /* Max width to contain the quiz area */
+    margin: 50px auto; /* Centering the quiz box vertically and horizontally */
+    padding: 20px; /* Padding inside the quiz box */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Quiz Content Styling */
+.quiz-content {
+    text-align: center; /* Center aligning all content within the quiz content area */
+}
+
+/* Question Title */
+.question {
+    margin-bottom: 20px; /* Space below the question for separation */
+    font-size: 1.25rem; /* Larger font size for readability */
+    color: #333; /* Darker text for better contrast */
+}
+
+/* Answer Buttons Styling */
+.answer-btn {
+    width: 100%; /* Full width buttons for easier clickability */
+    padding: 12px 20px; /* Generous padding for touch targets */
+    font-size: 1rem; /* Readable text size */
+    color: #ffffff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary blue background */
+    border: none; /* No border for a cleaner look */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-bottom: 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.answer-btn:hover, .answer-btn:focus {
+    background-color: #0056b3; /* Darker blue on hover/focus for visual feedback */
+    transform: scale(1.05); /* Slightly enlarging the button on hover/focus */
+    outline: none; /* Removing the outline on focus for cleaner aesthetics */
+}
+
+/* Next Button Styling */
+#next-btn {
+    display: block; /* Block display to take full width */
+    width: 50%; /* Half width */
+    padding: 10px 0; /* Padding for better touch target */
+    margin: 20px auto 0; /* Center it horizontally and margin on the top */
+    background-color: #28a745; /* Bootstrap success green */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#next-btn:hover {
+    background-color: #218838; /* Darker green on hover for feedback */
+}
+
+/* Results Section Styling */
+.results {
+    text-align: center; /* Center all text in results */
+    padding: 20px; /* Padding for spacing */
+    margin-top: 20px; /* Margin on top to separate from quiz content */
+    background-color: #fff; /* White background for consistency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow with quiz box */
+}
+
+.hidden {
+    display: none; /* Utility class to hide elements */
+}
